@@ -1,0 +1,12 @@
+RUSTC=rustc
+
+crater.dylib: crater.rs
+	$(RUSTC) $^
+
+%.o: %.rust
+	$(RUSTC) --emit obj $< -o $@
+
+clean:
+	rm crater.dylib
+
+
