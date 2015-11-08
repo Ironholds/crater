@@ -5,9 +5,9 @@
 #' a package interface and demonstrates how seamless the
 #' result can look to the end user.
 #'
-#' @useDynLib libcrater
+#' @useDynLib crater
 #' @docType package
-#' @importFrom Rffi prepCIF callCIF
+#' @importFrom Rffi prepCIF callCIF doubleType sint32Type
 #' @aliases crater crater-package
 NULL
 
